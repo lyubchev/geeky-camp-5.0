@@ -17,11 +17,11 @@ public class Plato {
         for (int i = 1; i < input.length(); i++) {
             if(input.charAt(i - 1) == input.charAt(i)) {
                 current++;
+                if(current > max) {
+                    max = current;
+                }
             } else {
                 current=1;
-            }
-            if(current > max) {
-                max = current;
             }
         }
 
