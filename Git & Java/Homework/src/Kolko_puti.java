@@ -14,7 +14,7 @@ public class Kolko_puti {
                 numMap.put(num, numMap.get(num)+1);
                 continue;
             }
-            numMap.put(num,1);
+            numMap.put(num, 1);
         }
 
         StringBuilder sb = new StringBuilder();
@@ -22,6 +22,6 @@ public class Kolko_puti {
             sb.append(KvP.getKey() + " " + KvP.getValue() + " ");
         }
 
-        System.out.printf(sb.toString().trim());
+        System.out.println(sb.toString().trim());
     }
 }
