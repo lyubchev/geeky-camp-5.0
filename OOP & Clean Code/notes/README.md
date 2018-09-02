@@ -149,7 +149,7 @@
 
 ## Генериране на изключения
 
-- ```java 
+```java 
 public Object pop() {
    if (size == 0) {
    	throw new exception ...
@@ -176,7 +176,7 @@ Try Catch фрагмент
 
 ## Деклариране на хвърляни изключения
 
-Ако метод не прехваща даден **checked** exception, който може да се хвърли в тялото му, той трябва да го декларира в прототипа си, за да "предупреди" тези, които го викат:
+Ако метод не прихваща даден **checked** exception, който може да се хвърли в тялото му, той трябва да го декларира в прототипа си, за да "предупреди" тези, които го викат:
 
 ```java
 public void writeList() throws IOException, IndexOutOfBoundsException {
@@ -239,5 +239,10 @@ public void writeList() throws IOException, IndexOutOfBoundsException {
 
 - Полезни инструменти
 	**checkstyle**, **PMD**, **FindBugs**
+
+# Колекции
+
+## Интерфейси
+
 
 
