@@ -10,6 +10,8 @@ public class Bikove_i_Kravi {
         GuessManager guesser = new GuessManager();
         String input;
 
+        System.out.println("Моля въведете четирицифрено число с различни цифри: ");
+
         while (!guesser.getHasWon()) {
             input = scanner.nextLine();
             try {
@@ -105,8 +107,6 @@ class GuessManager {
                     numToGuess.append(num);
                 }
             }
-
-            System.out.println(numToGuess.toString());
 
             return numToGuess.toString();
         }
