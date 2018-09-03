@@ -17,7 +17,9 @@ public class Bikove_i_Kravi {
             try {
                 guesser.setNumber(input);
             } catch (Exception e) {
-                System.out.println(e.toString());
+                e.printStackTrace();
+
+                System.out.println("Моля въведете четирицифрено число с различни цифри: ");
                 continue;
             }
             guesser.guess();
