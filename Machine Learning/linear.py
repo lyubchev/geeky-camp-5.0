@@ -23,5 +23,5 @@ print("Mean Squared Error %f.02: " % mean_squared_error(y_test, y_pred))
 print("R2 score: %f" % r2_score(y_test, y_pred))
 
 plt.scatter(x_test, y_test, color="blue")
-plt.plot()
+plt.plot(x_test, y_pred, color="green")
 plt.show()
