@@ -4,6 +4,6 @@ public class InMemoryFileSystem {
         FileSystem fs = new FileSystem();
         fs.createDir("home", Permission.READ_WRITE);
         fs.createDir("pesho", Permission.READ_WRITE);
-        fs.changeDir("pesho");
+        fs.deleteDir("pesho");
     }
 }

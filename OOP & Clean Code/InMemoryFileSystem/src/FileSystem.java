@@ -32,8 +32,8 @@ public class FileSystem {
 
     public void changeDir(String path) {
         // goes to roof dir
-        if(path.equals("..") || path.equals("../")) {
-            String parent = this.currentDir.getPath().substring(0, this.currentDir.getPath().length()-1);
+        if (path.equals("..") || path.equals("../")) {
+            String parent = this.currentDir.getPath().substring(0, this.currentDir.getPath().length() - 1);
             parent = parent.substring(parent.lastIndexOf('/'));
             this.currentDir = this.currentDir.changeDir(parent);
         }
