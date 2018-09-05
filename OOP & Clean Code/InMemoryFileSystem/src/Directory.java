@@ -21,7 +21,7 @@ public class Directory extends FileSystemObject {
     }
 
     public Directory changeDir(String path) {
-        if (this.children.containsKey(this.path + path + "/")) {
+        if (this.isObjInside(path)) {
             return (Directory) this.children.get(this.path + path + "/");
         } else {
             System.out.println("Directory doesn't exist");
@@ -33,29 +33,42 @@ public class Directory extends FileSystemObject {
         return children;
     }
 
-    @Override
     public void create(FileSystemObject fso) {
         String path = this.path + fso.getPath() + "/";
         fso.setPath(path);
         this.children.put(fso.getPath(), fso);
     }
 
-    @Override
-    public void open() {
-
+    public void open(String path) {
+        if(this.isObjInside(path)) {
+            System.out.println(((File) this.children.get(this.path + path + "/")).getContent());
+        }
+        else {
+            System.out.printf("Object not found!");
+        }
     }
 
-    @Override
+    public void edit(String path, String newContent) {
+        if(this.isObjInside(path)) {
+            File file = (File)this.children.get(this.path + path + "/");
+            file.setContent(newContent);
+            this.children.put(path, file);
+        }
+    }
+
     public void rename(String newName) {
 
     }
 
-    @Override
     public void delete(String path) {
-        if (this.children.containsKey(this.path + path + "/")) {
+        if (this.isObjInside(path)) {
             this.children.remove(this.path + path + "/");
         } else {
             System.out.println("Object doesn't exist!");
         }
+    }
+
+    public boolean isObjInside(String path) {
+        return this.children.containsKey(this.path + path+"/");
     }
 }

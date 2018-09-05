@@ -1,6 +1,9 @@
 public class File extends FileSystemObject{
 
     private FileType fileType;
+
+
+
     private String content = "";
 
     public File(String path, FileType type, Permission permission, String content) {
@@ -11,25 +14,11 @@ public class File extends FileSystemObject{
         this.isOpen = false;
     }
 
-    @Override
-    protected void create(FileSystemObject fso) {
-
+    public String getContent() {
+        return content;
     }
 
-    @Override
-    protected void open() {
-
+    public void setContent(String content) {
+        this.content = content;
     }
-
-    @Override
-    protected void rename(String newName) {
-
-    }
-
-    @Override
-    protected void delete(String path) {
-
-    }
-
-
 }
