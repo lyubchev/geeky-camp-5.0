@@ -38,7 +38,7 @@ public class FileSystem {
         } else if (path.startsWith("../")) {
             while(path.startsWith("../")) {
                 goBack();
-                path = path.substring(2);
+                path = path.substring(3);
             }
         }
 
@@ -63,7 +63,10 @@ public class FileSystem {
     }
 
     private void goBack() {
-        this.currentDir.getPath();
+        // checks if user is about to go in root dir
+        if(this.currentDir.getPath().matches("^\\/[\\w]+\\/$")) {
+            this.currentDir = this.root;
+        }
         String parent = this.currentDir.getPath().substring(1, this.currentDir.getPath().length() - 1);
         parent = parent.substring(0, parent.lastIndexOf('/'));
 
