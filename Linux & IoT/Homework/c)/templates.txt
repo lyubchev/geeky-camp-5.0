@@ -1,0 +1,5 @@
+chasha="klaviatura"
+stol="mlqko"
+mlechnakrava="snickers"
+mainkraft="9yo"
+sniper="terorist"
