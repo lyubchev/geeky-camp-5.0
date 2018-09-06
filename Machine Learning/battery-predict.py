@@ -8,11 +8,11 @@ data = pd.read_csv("./battery-data.csv", header=None)
 X = np.array(data[data.columns[0]]).reshape(data.shape[0], 1)
 Y = np.array(data[data.columns[1]]).reshape(data.shape[0], 1)
 
-y_train = Y[:-10]
-y_test = Y
+y_train = Y[:-20]
+y_test = Y[-25:]
 
-x_train = X[:-10]
-x_test = X
+x_train = X[:-20]
+x_test = X[-25:]
 
 linear_regression = linear_model.LinearRegression()
 linear_regression.fit(x_train, y_train)
