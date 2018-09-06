@@ -1,20 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="28c09a4e-38a4-48c3-9f1b-d6e770ef730b" name="Default Changelist" comment="sdklfsdkfjsdklj">
-      <change beforePath="$PROJECT_DIR$/../../Blockchain/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../Blockchain/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/InMemoryFileSystem/Directory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/InMemoryFileSystem/Directory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/InMemoryFileSystem/File.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/InMemoryFileSystem/File.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/InMemoryFileSystem/FileSystem.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/InMemoryFileSystem/FileSystem.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/InMemoryFileSystem/FileSystemObject.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/InMemoryFileSystem/FileSystemObject.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/InMemoryFileSystem/InMemoryFileSystem.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/InMemoryFileSystem/InMemoryFileSystem.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Directory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Directory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/File.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/File.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FileSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FileSystem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FileSystemObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FileSystemObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/InMemoryFileSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/InMemoryFileSystem.java" afterDir="false" />
-    </list>
+    <list default="true" id="28c09a4e-38a4-48c3-9f1b-d6e770ef730b" name="Default Changelist" comment="sdklfsdkfjsdklj" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,7 +13,7 @@
     <session id="1828741161">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="2" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.21" value="1" />
           <entry key="project.open.time.27" value="1" />
@@ -85,8 +72,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/InMemoryFileSystem.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="460">
-              <caret line="32" column="29" selection-start-line="32" selection-start-column="29" selection-end-line="32" selection-end-column="29" />
+            <state relative-caret-position="100">
+              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
             </state>
           </provider>
         </entry>
@@ -191,7 +178,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1536156535494" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1536156698513" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -234,7 +221,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="0" width="1368" height="736" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Designer" order="0" />
       <window_info id="UI Designer" order="1" />
@@ -248,7 +234,7 @@
       <window_info anchor="bottom" id="Version Control" order="2" />
       <window_info anchor="bottom" id="Message" order="3" />
       <window_info anchor="bottom" id="Find" order="4" weight="0.23404256" />
-      <window_info active="true" anchor="bottom" id="Run" order="5" visible="true" weight="0.0801964" />
+      <window_info anchor="bottom" id="Run" order="5" weight="0.0801964" />
       <window_info anchor="bottom" id="Debug" order="6" weight="0.41571194" />
       <window_info anchor="bottom" id="Cvs" order="7" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="8" weight="0.4" />
@@ -379,8 +365,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/InMemoryFileSystem.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="32" column="29" selection-start-line="32" selection-start-column="29" selection-end-line="32" selection-end-column="29" />
+        <state relative-caret-position="100">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
         </state>
       </provider>
     </entry>
