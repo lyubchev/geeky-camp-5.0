@@ -35,7 +35,7 @@ contract DDNS {
     
     function withdraw(uint value) public {
         require(msg.sender == owner && toWithdraw - value >= 0);
-        owner.transfer(value);
+        owner.transfer(value*(10**18));
     }
     
     //maybe functionality? Your choice!
