@@ -13,8 +13,8 @@ contract counter {
         counter++;
     }
     
-    function getCounter() public view returns (uint _counter) {
-        _counter = counter;
+    function getCounter() public view returns (uint) {
+        return counter;
     }
 }
 
