@@ -12,7 +12,7 @@ public class Bikove_i_Kravi {
 
         System.out.println("Моля въведете четирицифрено число с различни цифри: ");
 
-        while (!guesser.getHasWon()) {
+        while (!guesser.isWon()) {
             input = scanner.nextLine();
             try {
                 guesser.setNumber(input);
@@ -33,10 +33,9 @@ class GuessManager {
 
     private final String originalNum = Utility.generateRandomNumber();
     private String number = "";
-    private boolean hasWon = false;
+    private boolean won = false;
 
-    private int cows = 0;
-    private int bulls = 0;
+    
 
     public GuessManager() {
     }
@@ -48,14 +47,13 @@ class GuessManager {
     }
 
     public void guess() {
-        findCows();
-        findBulls();
-
+        private int cows = findCows();
+        private int bulls = findBulls();
         System.out.println(this.cows + " кравa(и), " + this.bulls + " бик(а)");
     }
 
-    public boolean getHasWon() {
-        return this.hasWon;
+    public boolean isWon() {
+        return this.won;
     }
 
     public int getCows() {
@@ -66,8 +64,8 @@ class GuessManager {
         return this.bulls;
     }
 
-    private void findCows() {
-        this.cows = 0;
+    private int findCows() {
+        int cows = 0;
         List<Character> temp = new LinkedList<>();
 
         for (char digit : this.originalNum.toCharArray()) {
@@ -77,24 +75,26 @@ class GuessManager {
         for (int i = 0; i < originalNum.length(); i++) {
             for (int j = 0; j < temp.size(); j++) {
                 if (this.number.charAt(i) == temp.get(j)) {
-                    this.cows++;
+                    cows++;
                     temp.remove(j);
                     break;
                 }
             }
         }
+        return cows;
     }
 
-    private void findBulls() {
-        this.bulls = 0;
+    private int findBulls() {
+        int bulls = 0;
 
         for (int i = 0; i < this.originalNum.length(); i++) {
             if (this.number.charAt(i) == this.originalNum.charAt(i)) {
-                this.bulls++;
+                bulls++;
             }
         }
 
-        this.hasWon = this.bulls == 4;
+        this.won = bulls == 4;
+        return bulls;
     }
 
     private static class Utility {
